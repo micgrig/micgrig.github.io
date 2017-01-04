@@ -154,6 +154,32 @@ ul li {
   margin-left: 1em;
 }
 
+ol {
+  margin: 0 0 1em;
+}
+
+ol li{
+  margin-left: 1em;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 0 1em;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 5px;
+}
+
+dl {
+  margin: 0 0 1em; 
+}
+
 footer {
     -webkit-border-radius: 0 0 0.5em 0.5em;
     -moz-border-radius: 0 0 0.5em 0.5em;
@@ -180,7 +206,6 @@ footer p a:hover{
   color: white;
 }
 
-/*Aditional test CSS below*/
 p#p01 {color:blue;}
 p.ex2 {
   font:italic bold 12px/30px Georgia, serif;
@@ -259,30 +284,4 @@ ol.v {list-style-type: inherit;}
 #customers tr.alt td {
     color: #000000;
     background-color: #EAF2D3;
-}
-
-ol {
-  margin: 0 0 1em;
-}
-
-ol li{
-  margin-left: 1em;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin: 0 0 1em;
-}
-
-table {
-  width: 100%;
-}
-
-th, td {
-  padding: 5px;
-}
-
-dl {
-  margin: 0 0 1em; 
 }
