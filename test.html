@@ -1,376 +1,336 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    
+    <!-- Not ready for Google to find me yet...
+    <meta name="author" content="Michael Grigoriadis" />
+    <meta name="keywords" content="Michael Grigoriadis, Grigoriadis, haili, Highly" />
+    <meta name="description" content="The official page for Michael Grigoriadis." />
     <title>Official page for Michael Grigoriadis</title>
-
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <!-->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styles_test.css" />
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
       </script>
     <![endif]-->
   </head>
-  <body>    
-   <header>   
-    <a href="http://micgrig.github.io/hp/">
-     <img id="myhp" title="My HP" src="/pics/myhp.jpg" alt="My HP" width="148" height="88" />
-    </a>
-    <h1>Hello World</h1>
-
-    <ul id="menu">
-     <li><a href="index.html">Home</a></li>
-     <li><a href="test.html">Test</a></li>
-     <li><a href="poem.html">Poem</a></li>
-     <li><a href="contact.html">Contact</a></li>
-     </ul>
-   </header>
-
-   <section>
-      <p><a href="http://www.micgrig.github.io" target="iframe1">My github page</a></p>
-    <div class="cities">
-     <h2>London</h2>
-     <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <body>
+    <div class="wrapper">
+      <header>   
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="index.html">
+                <img id="myhp" title="My HP" src="https://dl.dropboxusercontent.com/u/15141847/webdevpics/myhp.jpg" alt="MyHP" width="148" height="88"/>
+              </a>
+            </li>
+            <!--<li><a href="test.html" target="_blank">Test</a></li><!-->
+            <li><a href="poem.html">Poem</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <section>
+          <p><a href="http://micgrig.github.io" target="iframe1">My github page</a></p>
+          <div class="cities">
+           <h2>London</h2>
+           <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          </div>
+          <div class="cities">
+           <h2>Paris</h2>
+           <p>Paris is the capital and most populous city of France.</p>
+          </div>
+          <div class="cities">
+           <h2>Tokyo</h2>
+           <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+           and the most populous metropolitan area in the world.</p>
+          </div> 
+          <table id="customers">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr class="alt">
+              <td>Berglunds snabbköp</td>
+              <td>Christina Berglund</td>
+              <td>Sweden</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr class="alt">
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr class="alt">
+              <td>Königlich Essen</td>
+              <td>Philip Cramer</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr class="alt">
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+            <tr>
+              <td>North/South</td>
+              <td>Simon Crowther</td>
+              <td>UK</td>
+            </tr>
+            <tr class="alt">
+              <td>Paris spécialités</td>
+              <td>Marie Bertrand</td>
+              <td>France</td>
+            </tr>
+          </table>
+          <p class="none">No border.</p>
+          <p class="dotted">A dotted border.</p>
+          <p class="dashed">A dashed border.</p>
+          <p class="solid">A solid border.</p>
+          <p class="double">A double border.</p>
+          <p class="groove">A groove border.</p>
+          <p class="ridge">A ridge border.</p>
+          <p class="inset">An inset border.</p>
+          <p class="outset">An outset border.</p>
+          <p class="hidden">A hidden border.</p>
+          <p class="dotted">A dotted outline</p>
+          <p class="dashed">A dashed outline</p>
+          <p class="solid">A solid outline</p>
+          <p class="double">A double outline</p>
+          <p class="groove">A groove outline</p>
+          <p class="ridge">A ridge outline</p>
+          <p class="inset">An inset outline</p>
+          <p class="outset">An outset outline</p>
+          <ul style="list-style-type:square">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul> 
+          <ul class="a">
+            <li>Circle type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          <ul class="b">
+            <li>Disc type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          <ul class="c">
+            <li>Square type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+          <ol class="d">
+            <li>Armenian type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="e">
+            <li>Cjk-ideographic type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="f">
+            <li>Decimal type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="g">
+            <li>Decimal-leading-zero type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="h">
+            <li>Georgian type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="i">
+            <li>Hebrew type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="j">
+            <li>Hiragana type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="k">
+            <li>Hiragana-iroha type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="l">
+            <li>Katakana type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="m">
+            <li>Katakana-iroha type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="n">
+            <li>Lower-alpha type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="o">
+            <li>Lower-greek type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="p">
+            <li>Lower-latin type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="q">
+            <li>Lower-roman type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="r">
+            <li>Upper-alpha type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="s">
+            <li>Upper-latin type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="t">
+            <li>Upper-roman type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="u">
+            <li>None type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol class="v">
+            <li>inherit type</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          <ol type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+          <dl>
+            <dt>Coffee</dt>
+             <dd>-Cold</dd>
+            <dt>Tea</dt>
+             <dd>-Hot</dd>
+            <dt>Milk</dt>
+             <dd>-Mild</dd>
+          </dl>
+          <table style="width:300px">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>    
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>    
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>    
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>    
+              <td>80</td>
+            </tr>
+          </table>
+          <p id="p01">I am different</p>
+          <p>Einstein wrote:</p>
+          <p><var>E = m c<sup>2</sup></var></p>
+          <p>The kbd element represents keyboard input:</p>
+          <p><kbd>File | Open...</kbd></p>
+          <samp>
+           demo.example.com login: Apr 12 09:10:17 Linux 2.6.10-
+           grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+          </samp>
+          <br />
+          <code>
+            <pre>
+              var person = {
+                firstName:"John",
+                lastName:"Doe",
+                age:50,
+                eyeColor:"blue"
+              }
+            </pre>
+          </code>
+          <p style="font-family:verdana" >hello hello</p>
+          <p style="text-align:center" >hello hello</p>
+          <p style="font-size:50%" >hello hello</p>
+          <p>Here is a quote from WWF's website:</p>
+          <q> 
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+          </q>
+          <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature.The world's leading conservation organization,WWF works in 100 countries and is supported by1.2 million members in the United States and close to 5 million globally.
+          </blockquote>
+          <p><mark>I'm hosted with</mark> <strong>GitHub Pages.</strong></p>
+          <p><ins>Here's</ins> another paragraph.</p>
+          <p style="color:red">And another <del>two</del><sub>one.</sub></p>
+          <p class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+          <p>Mouse over the words to change the cursor.</p>
+          <span style="cursor:auto">auto</span><br>
+          <span style="cursor:crosshair">crosshair</span><br>
+          <span style="cursor:default">default</span><br>
+          <span style="cursor:e-resize">e-resize</span><br>
+          <span style="cursor:help">help</span><br>
+          <span style="cursor:move">move</span><br>
+          <span style="cursor:n-resize">n-resize</span><br>
+          <span style="cursor:ne-resize">ne-resize</span><br>
+          <span style="cursor:nw-resize">nw-resize</span><br>
+          <span style="cursor:pointer">pointer</span><br>
+          <span style="cursor:progress">progress</span><br>
+          <span style="cursor:s-resize">s-resize</span><br>
+          <span style="cursor:se-resize">se-resize</span><br>
+          <span style="cursor:sw-resize">sw-resize</span><br>
+          <span style="cursor:text">text</span><br>
+          <span style="cursor:w-resize">w-resize</span><br>
+          <span style="cursor:wait">wait</span><br>
+        </section>
+      </article>
+      <footer>
+        <p>LinkedIn:
+          <a href="linkedin.com/michaelgrigoriadis">Michael Grigoriadis</a>
+        </p>
+      </footer>
     </div>
-
-    <div class="cities">
-     <h2>Paris</h2>
-     <p>Paris is the capital and most populous city of France.</p>
-    </div>
-
-    <div class="cities">
-     <h2>Tokyo</h2>
-     <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-     and the most populous metropolitan area in the world.</p>
-    </div> 
-    <table id="customers">
-      <tr>
-        <th>Company</th>
-        <th>Contact</th>
-        <th>Country</th>
-      </tr>
-      <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-      </tr>
-      <tr class="alt">
-        <td>Berglunds snabbköp</td>
-        <td>Christina Berglund</td>
-        <td>Sweden</td>
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-      </tr>
-      <tr class="alt">
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
-      </tr>
-      <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
-      </tr>
-      <tr class="alt">
-        <td>Königlich Essen</td>
-        <td>Philip Cramer</td>
-        <td>Germany</td>
-      </tr>
-      <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
-      </tr>
-      <tr class="alt">
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
-      </tr>
-      <tr>
-        <td>North/South</td>
-        <td>Simon Crowther</td>
-        <td>UK</td>
-      </tr>
-      <tr class="alt">
-        <td>Paris spécialités</td>
-        <td>Marie Bertrand</td>
-        <td>France</td>
-      </tr>
-    </table>
-
-    <p class="none">No border.</p>
-    <p class="dotted">A dotted border.</p>
-    <p class="dashed">A dashed border.</p>
-    <p class="solid">A solid border.</p>
-    <p class="double">A double border.</p>
-    <p class="groove">A groove border.</p>
-    <p class="ridge">A ridge border.</p>
-    <p class="inset">An inset border.</p>
-    <p class="outset">An outset border.</p>
-    <p class="hidden">A hidden border.</p>
-
-    <p class="dotted">A dotted outline</p>
-    <p class="dashed">A dashed outline</p>
-    <p class="solid">A solid outline</p>
-    <p class="double">A double outline</p>
-    <p class="groove">A groove outline</p>
-    <p class="ridge">A ridge outline</p>
-    <p class="inset">An inset outline</p>
-    <p class="outset">An outset outline</p>
-
-    <ul style="list-style-type:square">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-    
-    <ul class="a">
-      <li>Circle type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
-
-    <ul class="b">
-      <li>Disc type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
-
-    <ul class="c">
-      <li>Square type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
-
-    <ol class="d">
-      <li>Armenian type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="e">
-      <li>Cjk-ideographic type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="f">
-      <li>Decimal type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="g">
-      <li>Decimal-leading-zero type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="h">
-      <li>Georgian type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="i">
-      <li>Hebrew type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="j">
-      <li>Hiragana type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="k">
-      <li>Hiragana-iroha type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="l">
-      <li>Katakana type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="m">
-      <li>Katakana-iroha type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="n">
-      <li>Lower-alpha type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="o">
-      <li>Lower-greek type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="p">
-      <li>Lower-latin type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="q">
-      <li>Lower-roman type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="r">
-      <li>Upper-alpha type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="s">
-      <li>Upper-latin type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="t">
-      <li>Upper-roman type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="u">
-      <li>None type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-
-    <ol class="v">
-      <li>inherit type</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
-    <ol type="A">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-
-    <dl>
-      <dt>Coffee</dt>
-       <dd>-Cold</dd>
-      <dt>Tea</dt>
-       <dd>-Hot</dd>
-      <dt>Milk</dt>
-       <dd>-Mild</dd>
-    </dl>
-
-    <table style="width:300px">
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>    
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>    
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>    
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>    
-        <td>80</td>
-      </tr>
-    </table>
-
-    <p id="p01">I am different</p>
-    <p>Einstein wrote:</p>
-    <p><var>E = m c<sup>2</sup></var></p>
-    <p>The kbd element represents keyboard input:</p>
-    <p><kbd>File | Open...</kbd></p>
-
-    <samp>
-     demo.example.com login: Apr 12 09:10:17 Linux 2.6.10-
-     grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
-    </samp>
-
-    <br></br>
-
-    <code>
-      <pre>
-        var person = {
-          firstName:"John",
-          lastName:"Doe",
-          age:50,
-          eyeColor:"blue"
-        }
-      </pre>
-    </code>
-
-    <p style="font-family:verdana" >hello hello</p>
-    <p style="text-align:center" >hello hello</p>
-    <p style="font-size:50%" >hello hello</p>
-
-    <p>Here is a quote from WWF's website:</p>
-    <q> 
-      For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
-    </q>
-    <blockquote cite="http://www.worldwildlife.org/who/index.html">
-      For 50 years, WWF has been protecting the future of nature.The world's leading conservation organization,WWF works in 100 countries and is supported by1.2 million members in the United States and close to 5 million globally.
-    </blockquote>
-
-    <p><mark>I'm hosted with</mark> <strong>GitHub Pages.</strong></p>
-    <p><ins>Here's</ins> another paragraph.</p>
-    <p style="color:red">And another <del>two</del><sub>one.</sub></p>
-
-    <p class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
-
-    <p>Mouse over the words to change the cursor.</p>
-    <span style="cursor:auto">auto</span><br>
-    <span style="cursor:crosshair">crosshair</span><br>
-    <span style="cursor:default">default</span><br>
-    <span style="cursor:e-resize">e-resize</span><br>
-    <span style="cursor:help">help</span><br>
-    <span style="cursor:move">move</span><br>
-    <span style="cursor:n-resize">n-resize</span><br>
-    <span style="cursor:ne-resize">ne-resize</span><br>
-    <span style="cursor:nw-resize">nw-resize</span><br>
-    <span style="cursor:pointer">pointer</span><br>
-    <span style="cursor:progress">progress</span><br>
-    <span style="cursor:s-resize">s-resize</span><br>
-    <span style="cursor:se-resize">se-resize</span><br>
-    <span style="cursor:sw-resize">sw-resize</span><br>
-    <span style="cursor:text">text</span><br>
-    <span style="cursor:w-resize">w-resize</span><br>
-    <span style="cursor:wait">wait</span><br>
-
-    <p>Here is a poem for you guys:</p>
-    <pre>
-      My Bonnie lies over the ocean.
-
-      My Bonnie lies over the sea. 
-
-      My Bonnie lies over the ocean. 
-
-      Oh, bring back my Bonnie to me.
-    </pre>
-   </section>
-
-   <footer>
-    Copyright © 2014 Michael Grigoriadis
-   </footer>
   </body>
 </html>
