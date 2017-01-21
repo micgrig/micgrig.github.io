@@ -25,26 +25,38 @@ html {
 }
 
 body {
-  width: 100%; /*Full screen width*/
-  margin: auto; /*Centers the wrapper*/
+  font-family: roboto, arial, sans-serif;
+}
+
+.bodybox {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
 }
 
 /***** Header style *****/
 
 header {
-  background: #66A9EB; /*Sky blue*/
-  background: -o-linear-gradient(#4093E6, #66A9EB);
-  background: -moz-linear-gradient(#4093E6, #66A9EB);
-  background: -webkit-linear-gradient(#4093E6, #66A9EB);
-  background: linear-gradient(#4093E6, #66A9EB);
+  background-image: url('https://dl.dropboxusercontent.com/u/15141847/coverpick.jpg');
+  background-position: center center;
+  height: 10rem;
 }
 
 /***** Navigation style *****/
 
 nav {
-  font-family: helvetica;
-  text-transform: uppercase;
-  text-align: center;
+  background: #66A9EB; /*Sky blue*/
+  background: -o-linear-gradient(#4093E6, #66A9EB);
+  background: -moz-linear-gradient(#4093E6, #66A9EB);
+  background: -webkit-linear-gradient(#4093E6, #66A9EB);
+  background: linear-gradient(#4093E6, #66A9EB);
+  text-align: right;
+  position: relative;
+  float: right;
+  margin-right: 1rem;
+  top: 1rem;
+  line-height: 4rem; /*Vertically aligns paragraph to middle*/
+  width: 60%;
 }
 
 nav ul {
@@ -57,19 +69,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #EDF6FF; /*Light*/
+  color: #EDF6FF; /*Almost white*/
   padding: 0.625rem 1.25rem;
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: all 0s;
-  -webkit-transition: all 0s;
-  -o-webkit-transition: all 0s;
-  -moz-webkit-transition: all 0s;
 }
 
 nav ul li a:hover {
-  color: #0E2133; /*Dark*/
-  padding: 0.625rem 1.25rem;
-  text-decoration: none;
+  color: #0E2133; /*Almost black*/
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -o-webkit-transition: all 0.4s;
@@ -78,14 +86,7 @@ nav ul li a:hover {
 
 /***** Content style *****/
 
-article {
-  font-family: roboto; 
-}
 
-form input {
-  display: block;
-  margin: 0.25rem 0;
-}
 
 /***** Footer style *****/
 
@@ -93,16 +94,16 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0.3125em;
-  border: 0.0625em solid black;
+  height: 10rem;
+  line-height: 10rem;
 }
 
 footer p {
-  display: inline;
+  margin: 0;
 }
 
 footer p a {
-  color: #47A3FF;
+  color: #47A3FF; /*Skyblue*/
   text-decoration: none;
 }
 
