@@ -1,0 +1,123 @@
+/*
+Theme Name: MG1
+Description: My first stylesheet
+Author: Michael Grigoriadis
+Author URI: micgrig.github.io
+Tags: Website
+Colors: steelblue (#4682b4), lightsteelblue (#b0c4de)
+*/
+
+/***** General styles *****/
+
+* { 
+  box-sizing: border-box;
+}
+
+html {
+  background: #4682b4;
+  background: -o-linear-gradient(#4682b4, #b0c4de);
+  background: -moz-linear-gradient(#4682b4, #b0c4de);
+  background: -webkit-linear-gradient(#4682b4, #b0c4de);
+  background: linear-gradient(#4682b4, #b0c4de);
+  background-attachment: fixed; /*Gradient doesnt change when scrolling*/
+}
+
+body {
+  font-family: verdana, sans-serif;
+}
+
+.body-wrapper {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+/***** Header style *****/
+
+header:before,
+header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header {
+  *zoom: 1;
+}
+
+header {
+  background-color: #b0c4de;
+  min-height: 7rem;
+  padding: 0.5rem;
+}
+
+.my-profile-picture {
+  border-radius: 100%;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  float: left;
+}
+
+.profile-text {
+  line-height: 7rem;
+}
+
+/***** Content style *****/
+
+img {
+  display: block;
+}
+
+.projects {
+  background-color: #396a93;
+  padding: 0.5rem;
+}
+
+p, h1, h2 {
+  margin: 0;
+}
+
+h1, h2 {
+  line-height: 1.5;
+  display: inline;
+  color: #000;
+  -webkit-transition: all 0.4s;
+  -o-webkit-transition: all 0.4s;
+  -moz-webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #47a3ff;
+  -webkit-transition: all 0.4s;
+  -o-webkit-transition: all 0.4s;
+  -moz-webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+a:hover, h1:hover, h2:hover{
+  color: #dbe4f0;
+  -webkit-transition: all 0.4s;
+  -o-webkit-transition: all 0.4s;
+  -moz-webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/***** Footer style *****/
+
+footer {
+  background-color: #2b506e;
+  text-align: center;
+  height: 10rem;
+  line-height: 10;
+}
