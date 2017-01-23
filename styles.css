@@ -4,31 +4,29 @@ Description: My first stylesheet
 Author: Michael Grigoriadis
 Author URI: micgrig.github.io
 Tags: Website
+Colors: steelblue (#4682b4), lightsteelblue (#b0c4de)
 */
 
 /***** General styles *****/
 
-h6 {color: red;} /*For tesing. First selector doesn't work in codepen.io*/
-
 * { 
-  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
   box-sizing: border-box;
 }
 
 html {
-  background: steelblue; /*Steel*/
-  background: -o-linear-gradient(steelblue, lightsteelblue); /*Opera*/ 
-  background: -moz-linear-gradient(steelblue, lightsteelblue); /*Firefox*/ 
-  background: -webkit-linear-gradient(steelblue, lightsteelblue); /*Safari*/
-  background: linear-gradient(steelblue, lightsteelblue); /*Standard syntax*/
+  background: #4682b4;
+  background: -o-linear-gradient(#4682b4, #b0c4de);
+  background: -moz-linear-gradient(#4682b4, #b0c4de);
+  background: -webkit-linear-gradient(#4682b4, #b0c4de);
+  background: linear-gradient(#4682b4, #b0c4de);
   background-attachment: fixed; /*Gradient doesnt change when scrolling*/
 }
 
 body {
-  font-family: roboto, arial, sans-serif;
+  font-family: verdana, sans-serif;
 }
 
-.bodybox {
+.body-wrapper {
   width: 100%;
   max-width: 50rem;
   margin: auto;
@@ -36,77 +34,90 @@ body {
 
 /***** Header style *****/
 
+header:before,
+header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
 header {
-  background-image: url('https://dl.dropboxusercontent.com/u/15141847/coverpick.jpg');
-  background-position: center center;
-  height: 10rem;
+  *zoom: 1;
 }
 
-/***** Navigation style *****/
+header {
+  background-color: #b0c4de;
+  min-height: 7rem;
+  padding: 0.5rem;
+}
 
-nav {
-  background: #66A9EB; /*Sky blue*/
-  background: -o-linear-gradient(#4093E6, #66A9EB);
-  background: -moz-linear-gradient(#4093E6, #66A9EB);
-  background: -webkit-linear-gradient(#4093E6, #66A9EB);
-  background: linear-gradient(#4093E6, #66A9EB);
-  text-align: right;
-  position: relative;
-  float: right;
+.my-profile-picture {
+  border-radius: 100%;
+  margin-top: 0.5rem;
   margin-right: 1rem;
-  top: 1rem;
-  line-height: 4rem; /*Vertically aligns paragraph to middle*/
-  width: 60%;
+  float: left;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: #EDF6FF; /*Almost white*/
-  padding: 0.625rem 1.25rem;
-  font-family: helvetica, arial, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #0E2133; /*Almost black*/
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -o-webkit-transition: all 0.4s;
-  -moz-webkit-transition: all 0.4s;
+.profile-text {
+  line-height: 7rem;
 }
 
 /***** Content style *****/
 
+img {
+  display: block;
+}
 
+.projects {
+  background-color: #396a93;
+  padding: 0.5rem;
+}
+
+p, h1, h2 {
+  margin: 0;
+}
+
+h1, h2 {
+  line-height: 1.5;
+  display: inline;
+  color: #000;
+  -webkit-transition: all 0.4s;
+  -o-webkit-transition: all 0.4s;
+  -moz-webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #47a3ff;
+  -webkit-transition: all 0.4s;
+  -o-webkit-transition: all 0.4s;
+  -moz-webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+a:hover, h1:hover, h2:hover{
+  color: #dbe4f0;
+  -webkit-transition: all 0.4s;
+  -o-webkit-transition: all 0.4s;
+  -moz-webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
 
 /***** Footer style *****/
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: #2b506e;
   text-align: center;
   height: 10rem;
-  line-height: 10rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer p a {
-  color: #47A3FF; /*Skyblue*/
-  text-decoration: none;
-}
-
-footer p a:hover{
-  color: white;
+  line-height: 10;
 }
