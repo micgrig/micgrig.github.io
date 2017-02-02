@@ -7,9 +7,9 @@ Tags: website
 Colors: steelblue (#4682b4), lightsteelblue (#b0c4de)
 */
 
-/***** General styles *****/
+/***** General *****/
 
-html, body, div, h1, h2, h3, p, a, img, footer, header {
+html, body, div, h1, h2, h3, p, a, img, footer, header, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -38,21 +38,27 @@ body {
 
 main {
   display: block;
-  width: 100%;
-  max-width: 50rem;
+  max-width: 42rem; /* = 42 * "default browser font size" = 42 * 16px = 672px */
   margin: 0 auto;
 }
+
+/***** Typography *****/
 
 h1 {
   font-size: 1.75rem;
   font-weight: bold;
   display: inline;
   color: #000;
+  -webkit-transition: color 0.4s;
+  -o-webkit-transition: color 0.4s;
+  -moz-webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 h2 {
-  font-size: 1.5rem;
-  padding-top: 0.2rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 0.2rem;
 }
 
 h3 {
@@ -61,8 +67,8 @@ h3 {
 }
 
 img {
-  border-style: none;
   display: block;
+  border-style: none;
 }
 
 a {
@@ -81,50 +87,55 @@ a:hover, h1:hover{
   transition: color 0.4s;
 }
 
-/***** Header style *****/
+/***** Clearfix *****/
 
-header:before, header:after {
+.group:before, .group:after {
   content: "";
   display: table;
 }
 
-header:after {
+.group:after {
   clear: both;
 }
 
-header {
+.group{
   zoom: 1;
+}
+
+/***** Header *****/
+
+header {
   display: block;
   background-color: #b0c4de;
-  min-height: 7rem;
   padding: 0.5rem;
 }
 
-header h2 {
+/***** Content *****/
+
+section {
   display: block;
-  font-size: 1.2rem;
-  font-weight: normal;
+  padding: 0.5rem;
 }
 
-header img {
+.tagline {
+  background: #a5bcd9;
+}
+
+.tagline p {
+  margin-top: 2rem;
+}
+
+.tagline a img {
   border-radius: 100%;
-  margin-top: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   float: left;
 }
 
-header p {
-  margin-top: 3.5rem;
-}
-
-/***** Content style *****/
-
 .portfolio {
-  background-color: #396a93;
-  padding: 0.5rem;
+  background: #396a93;
 }
 
-/***** Footer style *****/
+/***** Footer *****/
 
 footer {
   display: block;
@@ -132,4 +143,44 @@ footer {
   text-align: center;
   height: 10rem;
   line-height: 10;
+}
+
+/***** Media Queries *****/
+
+@media screen and (max-width: 700px) {
+  main {
+    max-width: 700px;
+  }
+  .tagline p {
+    margin-top: 1.8rem;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tagline p {
+    margin-top: 1.6rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .tagline p {
+    width: 131px;
+  }
+  .tagline a img {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 185px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.05rem;
+  }
 }
