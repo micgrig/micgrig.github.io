@@ -147,7 +147,7 @@ footer {
 
 /***** Media Queries *****/
 
-@media screen and (max-width: 700px) {
+@media handheld, screen and (max-width: 700px) {
   main {
     max-width: 700px;
   }
@@ -157,14 +157,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media handheld, screen and (max-width: 400px) {
   .tagline p {
     margin-top: 1.6rem;
     width: auto;
   }
 }
 
-@media screen and (max-width: 250px) {
+@media handheld, screen and (max-width: 250px) {
   .tagline p {
     width: 131px;
   }
@@ -173,7 +173,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 185px) {
+@media handheld, screen and (max-width: 185px) {
   h1 {
     font-size: 1.3rem;
   }
