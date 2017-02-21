@@ -10,6 +10,7 @@ Colors: steelblue (#4682b4), lightsteelblue (#b0c4de)
 /***** General *****/
 
 html, body, div, h1, h2, h3, p, a, img, footer, header, section {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,6 +24,7 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /*Change the default tap highlight to be completely transparent in iOS*/
 }
 
 body {
@@ -38,8 +40,13 @@ body {
 
 main {
   display: block;
-  max-width: 42rem; /* = 42 * "default browser font size" = 42 * 16px = 672px */
+  max-width: 42rem; /*42 * "html font size" (for example 42 * 16px = 672px)*/
   margin: 0 auto;
+}
+
+img {
+  display: block;
+  border-style: none;
 }
 
 /***** Typography *****/
@@ -66,11 +73,6 @@ h3 {
   font-weight: bold;
 }
 
-img {
-  display: block;
-  border-style: none;
-}
-
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -85,21 +87,6 @@ a:hover, h1:hover{
   -o-webkit-transition: color 0.4s;
   -moz-webkit-transition: color 0.4s;
   transition: color 0.4s;
-}
-
-/***** Clearfix *****/
-
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group{
-  zoom: 1;
 }
 
 /***** Header *****/
@@ -119,16 +106,19 @@ section {
 
 .tagline {
   background: #a5bcd9;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tagline p {
-  margin-top: 2rem;
+  margin: 2rem 2rem 0 0;
 }
 
 .tagline a img {
   border-radius: 100%;
-  margin-right: 0.5rem;
-  float: left;
+  margin-right: 1rem;
 }
 
 .portfolio {
@@ -138,42 +128,27 @@ section {
 /***** Footer *****/
 
 footer {
-  display: block;
   background-color: #2b506e;
-  text-align: center;
-  height: 10rem;
-  line-height: 10;
+  height: 5rem;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /***** Media Queries *****/
 
-@media handheld, screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   main {
     max-width: 700px;
   }
   .tagline p {
     margin-top: 1.8rem;
-    width: 400px;
+    width: 250px;
   }
 }
 
-@media handheld, screen and (max-width: 400px) {
-  .tagline p {
-    margin-top: 1.6rem;
-    width: auto;
-  }
-}
-
-@media handheld, screen and (max-width: 250px) {
-  .tagline p {
-    width: 131px;
-  }
-  .tagline a img {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media handheld, screen and (max-width: 185px) {
+@media screen and (max-width: 185px) {
   h1 {
     font-size: 1.3rem;
   }
