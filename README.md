@@ -1,6 +1,6 @@
 micgrig.github.io
 =================
 
-This page presents all my public projects at a glance. Enjoy!
+This portfolio page showcases my coding projects. Enjoy!
 
 https://micgrig.github.io/
