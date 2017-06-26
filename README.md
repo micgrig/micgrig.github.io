@@ -1,6 +1,5 @@
-micgrig.github.io
-=================
+<b>My portfolio page</b>
 
-This portfolio page showcases my coding projects. Enjoy!
+This page showcases my coding projects. Enjoy!
 
 https://micgrig.github.io/
