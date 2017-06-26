@@ -3,8 +3,16 @@ Theme Name: mg1
 Description: My first stylesheet
 Author: Michael Grigoriadis
 Author URI: https://micgrig.github.io
-Tags: website, normalize, reset, gradient, flexbox, responsive
-Colors: steelblue (#4682b4), lightsteelblue (#b0c4de)
+Tags: website, normalize, reset, print, gradient, monochromatic, flexbox, responsive
+Colors: 
+-Background:            #4682b4, rgb(70, 130, 180), hsl(207, 44%, 49%), steelblue
+-Background and header: #b0c4de, rgb(176, 196, 222), hsl(214, 41%, 78%), lightsteelblue
+-Tagline:               #a5bcd9, rgb(165, 188, 217), hsl(213, 41%, 75%)
+-Portfolio:             #396a93, rgb(165, 188, 217), hsl(213, 41%, 75%)
+-Footer:                #2b506e, rgb(43, 80, 110), hsl(207, 44%, 30%)
+-Text:                  #111111, rgb(17, 17, 17), hsl(0, 0%, 7%)
+-Link hover:            #dbe4f0, rgb(219, 228, 240), hsl(214, 41%, 90%)
+-Paint selection:       #b3d4fc, rgb(179, 212, 252), hsl(213, 92%, 85%)
 */
 
 /***** General normalizing/reseting *****/
