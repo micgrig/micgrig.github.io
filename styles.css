@@ -168,7 +168,7 @@ footer {
 
 /***** Media Queries *****/
 
-@media (min-width: 48em) { /* 768px */ }
+@media (min-width: 48rem) { /* 768px */ }
 
 @media (min-width: 34rem) { /* 544px */
   h1 {
